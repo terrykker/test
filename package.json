@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/terrykker/test/issues"
   },
-  "homepage": "https://github.com/terrykker/test#readme"
+  "homepage": "https://github.com/terrykker/test#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^7.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  }
 }
